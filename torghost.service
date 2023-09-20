@@ -6,8 +6,7 @@ After=network.target
 User=root
 ExecStart=python3 /usr/local/bin/torghost-service.py --start
 ExecStop=python3 /usr/local/bin/torghost-service.py --stop
-Restart=always
-RestartSec=1
+Restart=no
 
 [Install]
 WantedBy=multi-user.target
