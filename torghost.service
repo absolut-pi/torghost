@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=python3 /usr/local/bin/torghost-service.py --start
-ExecStop=python3 /usr/local/bin/torghost-service.py --stop
+ExecStart=python3 /usr/local/bin/torghost.service.py --start
+ExecStop=python3 /usr/local/bin/torghost.service.py --stop
 Restart=no
 
 [Install]
