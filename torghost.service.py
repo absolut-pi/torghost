@@ -163,8 +163,8 @@ def start_torghost():
     os.system(iptables_rules)
     print(bcolors.GREEN + '[done]' + bcolors.ENDC)
     print(t() + ' Fetching current IP...')
-    print(t() + ' CURRENT IP : ' + bcolors.GREEN + ip() + bcolors.ENDC)
     while True:
+        print(t() + ' CURRENT IP : ' + bcolors.GREEN + ip() + bcolors.ENDC)
         time.sleep(1000)
 
 
