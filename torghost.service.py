@@ -164,6 +164,8 @@ def start_torghost():
     print(bcolors.GREEN + '[done]' + bcolors.ENDC)
     print(t() + ' Fetching current IP...')
     print(t() + ' CURRENT IP : ' + bcolors.GREEN + ip() + bcolors.ENDC)
+    while True:
+        time.sleep(1000)
 
 
 def stop_torghost():
